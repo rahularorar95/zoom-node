@@ -1,3 +1,5 @@
+const { text } = require("express");
+
 const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video");
@@ -51,3 +53,5 @@ const addVideoStream = (video, stream) => {
 
   videoGrid.append(video);
 };
+
+
